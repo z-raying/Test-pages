@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" type="text/css" href="styles/layout.css" media="screen">
+</head>
+<body>
+	<h1>Snapshots</h1>
+	<ul>		
+		<li>
+			<a href="images/cool.jpg" onclick="showpic(this); return false;" 
+			title = "so coooool!">cool</a>
+		</li>
+		<li>
+			<a href="images/horse.jpg" onclick="showpic(this); return false;" 
+			title = "A super horse">horse</a>
+		</li>
+		<li>
+			<a href="images/skyground.jpg" onclick="showpic(this); return false;" 
+			title = "sky and ground...">skyground</a>
+		</li>
+		<li>
+			<a href="images/sunflower.jpg" onclick="showpic(this); return false;" 
+			title = "So beautiful">sunflower</a>
+		</li>
+		<img id="placeholder" src="images/tree.jpg" alt="my image gallery" />
+	</ul>
+	<p id="description">Choose an image.</p>
+	<script type="text/javascript" src="scripts/example.js">
+		window.onload = count();
+	</script>
+</body>
+</html>
